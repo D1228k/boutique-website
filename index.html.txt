@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Elegant Suits Boutique - Custom Tailoring and Formal Wear</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f9fafb;
+        }
+        .hero-bg {
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-size: cover;
+        }
+        .gallery-img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background-color: #ddd;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">Elegant Suits Boutique</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#hero" class="hover:text-indigo-600">Home</a></li>
+                <li><a href="#about" class="hover:text-indigo-600">About</a></li>
+                <li><a href="#services" class="hover:text-indigo-600">Services</a></li>
+                <li><a href="#gallery" class="hover:text-indigo-600">Designs</a></li>
+                <li><a href="#order" class="hover:text-indigo-600">Order Now</a></li>
+            </ul>
+            <button id="mobile-menu-btn" class="md:hidden">Menu</button>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4">Welcome to Elegance in Tailoring</h2>
+            <p class="text-lg md:text-xl mb-8">Discover custom suits, alterations, and bulk formal wear for men and women. Flexible designs to match your style.</p>
+            <img src="https://placehold.co/800x400" alt="Interior view of a high-end boutique showroom with mannequins displaying tailored men's and women's suits in royal blue and charcoal grey fabrics, with soft lighting and display racks for formal accessories in a modern, stylish setting." class="mx-auto mb-6 rounded-lg shadow-lg max-w-full h-auto" />
+            <a href="#order" class="bg-white text-indigo-600 px-8 py-3 rounded-full hover:bg-gray-100 transition">Order Your Suit</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">About Our Boutique</h2>
+            <p class="text-lg mb-6">With years of experience in stitching and altering suits, we specialize in bespoke formal wear. For men and women alike, we handle bulk orders with full flexibility in designs, fabrics, and sizes.</p>
+            <img src="https://placehold.co/600x300" alt="Skilled tailor measuring a client's measurements with measuring tape in a workshop filled with sewing machines, dress forms showcasing custom suit jackets and trousers in various mens and womens styles, including formal black tie and business attire in satin and wool materials." class="mx-auto rounded-lg shadow-lg max-w-full h-auto" />
+        </div>
+    </section>
+
+    <section id="services" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <div class="service-icon mx-auto"></div>
+                    <h3 class="text-xl font-semibold mb-4">Custom Suit Stitching</h3>
+                    <p class="text-gray-600">Tailor-made suits for men and women, with options in fabrics like wool, linen, or satin.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <div class="service-icon mx-auto"></div>
+                    <h3 class="text-xl font-semibold mb-4">Suit Alterations</h3>
+                    <p class="text-gray-600">Expert alterations for a perfect fit—fast service for any needs.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <div class="service-icon mx-auto"></div>
+                    <h3 class="text-xl font-semibold mb-4">Bulk Formal Wear Orders</h3>
+                    <p class="text-gray-600">Customized bulk production with discounts for events or teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Our Design Styles</h2>
+            <div class="grid md:grid-cols-3 gap-8" id="gallery-grid">
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300" alt="Close-up view of a men's sharp black tuxedo suit with satin lapels, perfect for formal events, draped over a mannequin in a well-lit studio, emphasizing the sleek tailoring and premium fabric texture for evening wear." />
+                    <p class="p-4 text-center">Men's Black Tuxedo</p>
+                </div>
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300" alt="Women's elegant navy blue skirt suit with white blouse and gold buttons, styled on a female mannequin in a professional setting, showcasing form-fitting design, subtle patterns, and high-quality wool blend for corporate or wedding attire." />
+                    <p class="p-4 text-center">Women's Navy Skirt Suit</p>
+                </div>
+                <div class="gallery-img rounded-lg overflow-hidden shadow-md">
+                    <img src="https://placehold.co/400x300" alt="Versatile men's grey suit jacket and trousers in herringbone fabric, displayed on a rack with complementary ties, ideal for business casual, featuring structured fit and durable stitching for everyday professional use in an office environment." />
+                    <p class="p-4 text-center">Men's Grey Herringbone Suit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-8">Order Your Custom Suit</h2>
+            <form id="order-form" class="bg-white p-8 rounded-lg shadow-md max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="name">Name</label>
+                    <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="email">Email</label>
+                    <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="service">Service Type</label>
+                    <select id="service" class="w-full p-2 border border-gray-300 rounded" required>
+                        <option>Custom Stitching</option>
+                        <option>Alterations</option>
+                        <option>Bulk Order</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700 mb-2" for="details">Details (Sizes, Designs, etc.)</label>
+                    <textarea id="details" class="w-full p-2 border border-gray-300 rounded" rows="4" placeholder="Describe your requirements for maximum flexibility"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2023 Elegant Suits Boutique. All rights reserved. Contact us at info@elegantsuits.com or +1-234-567-8900.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            const menu = document.querySelector('nav ul');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('hidden');
+        });
+
+        document.getElementById('order-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const details = document.getElementById('details').value;
+            alert(`Thank you ${name}! We received your order for ${service}. We'll contact you at ${email}. Details: ${details}`);
+            this.reset();
+        });
+    </script>
+</body>
+</html>
